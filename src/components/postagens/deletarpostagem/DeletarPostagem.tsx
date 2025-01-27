@@ -54,13 +54,13 @@ function DeletarPostagem() {
                 }
             })
 
-            alert('Postagem apagada com sucesso')
+            alert('Remédio apagada com sucesso')
 
         } catch (error: any) {
             if (error.toString().includes('403')) {
                 handleLogout()
             }else {
-                alert('Erro ao deletar a postagem.')
+                alert('Erro ao deletar o remédio.')
             }
         }
 
